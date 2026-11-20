@@ -85,7 +85,14 @@ $plugin->component = 'theme_tresa';
 // split. Changed to flex: 0 0 50% / max-width: 50%, so the image panel and
 // the login card each take exactly half the screen from the lg breakpoint
 // up.
-$plugin->version   = 2026072011;
+// v2.0.12: plugin directory review fixes. Added the Privacy API null provider,
+// the GPL LICENSE file, Moodle boilerplate headers on every source file and
+// thirdpartylibs.xml with the font licence texts. Removed the placeholder
+// dashboard widgets (fixed demo statistics) and the unused layouts/ and style/
+// copies. The front page course grid now uses core_course_category so category
+// and course visibility rules apply, and the welcome button only links to
+// local_dbajourney when that plugin is installed.
+$plugin->version   = 2026112000;
 $plugin->requires  = 2024100700; // Moodle 4.5+ (developed and verified against 5.2.1).
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = '2.0.11';
+$plugin->release   = '2.0.12';
